@@ -3,12 +3,18 @@
 
 using namespace std;
 
+#pragma region variables
 int guestValue = 0;
 int minNumber = 1;
 int maxNumber = 50000;
 int maxAttempt = 5; 
 int attempt = 0;
+#pragma endregion
 
+#pragma region Set the guess number
+/// <summary>
+/// Method the set the guess number
+/// </summary>
 void SetGuessNumber()
 {
     int _number;
@@ -22,6 +28,12 @@ void SetGuessNumber()
     guestValue = _number;
     system("CLS");
 }
+#pragma endregion
+
+#pragma region game
+/// <summary>
+/// Method of the game
+/// </summary>
 void Game()
 {
     int _guestValue = guestValue;
@@ -69,6 +81,8 @@ void Game()
         }
     }
 }
+#pragma endregion
+
 int main()
 {
     SetGuessNumber();
